@@ -23,6 +23,27 @@ export default function Sidenav() {
             <AiOutlineHome size={20} />
             <span className="pl-4">Home</span>
           </a>
+          <a
+            href="#main"
+            className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
+          >
+            <AiOutlineHome size={20} />
+            <span className="pl-4">Projects</span>
+          </a>
+          <a
+            href="#main"
+            className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
+          >
+            <AiOutlineHome size={20} />
+            <span className="pl-4">Resume</span>
+          </a>
+          <a
+            href="#main"
+            className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
+          >
+            <AiOutlineHome size={20} />
+            <span className="pl-4">Contact</span>
+          </a>
         </div>
       ) : (
         <div></div>

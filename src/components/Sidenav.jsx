@@ -31,7 +31,7 @@ export default function Sidenav() {
             <span className="pl-4">Home</span>
           </a>
           <a
-            href="#main"
+            href="#projects"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
@@ -45,7 +45,7 @@ export default function Sidenav() {
             <span className="pl-4">Resume</span>
           </a>
           <a
-            href="#main"
+            href="#contact"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineMail size={20} />
@@ -64,7 +64,7 @@ export default function Sidenav() {
             <AiOutlineHome size={20} />
           </a>
           <a
-            href="#main"
+            href="#projects"
             className="m-3 p-4 rounded-full bg-gray-100 shadow-gray-400 shadow-md hover:scale-110 hover:bg-gray-200 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
@@ -76,7 +76,7 @@ export default function Sidenav() {
             <BsPerson size={20} />
           </a>
           <a
-            href="#main"
+            href="#contact"
             className="m-3 p-4 rounded-full bg-gray-100 shadow-gray-400 shadow-md hover:scale-110 hover:bg-gray-200 ease-in duration-200"
           >
             <AiOutlineMail size={20} />

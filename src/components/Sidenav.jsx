@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { AiOutlineMenu, AiOutlineHome } from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineHome, AiOutlineProject, AiOutlineMail } from 'react-icons/ai';
+import { BsPerson } from 'react-icons/bs';
+// import { GrProjects } from 'react-icons/gr';
 
 export default function Sidenav() {
   const [nav, setNav] = useState(false);
@@ -27,21 +29,21 @@ export default function Sidenav() {
             href="#main"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
-            <AiOutlineHome size={20} />
+            <AiOutlineProject size={20} />
             <span className="pl-4">Projects</span>
           </a>
           <a
             href="#main"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
-            <AiOutlineHome size={20} />
+            <BsPerson size={20} />
             <span className="pl-4">Resume</span>
           </a>
           <a
             href="#main"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
-            <AiOutlineHome size={20} />
+            <AiOutlineMail size={20} />
             <span className="pl-4">Contact</span>
           </a>
         </div>

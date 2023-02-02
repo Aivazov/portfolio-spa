@@ -29,7 +29,7 @@ export default function Sidenav() {
         <AiOutlineMenu
           size={25}
           onClick={handleNav}
-          className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
+          className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer text-gray-200"
         />
       )}
 

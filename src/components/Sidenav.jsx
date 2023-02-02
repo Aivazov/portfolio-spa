@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import {
   AiOutlineMenu,
@@ -22,39 +23,39 @@ export default function Sidenav() {
         className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
       />
       {nav ? (
-        <div className="fixed w-full h-screen bg-white/70 flex flex-col justify-center items-center z-20 ease-linear duration-150">
-          <a
+        <div className="fixed w-full h-screen bg-white/70 flex flex-col justify-center items-center z-20 opacity-100 transition-opacity ease-linear duration-150">
+          <Link
             onClick={handleNav}
-            href="#main"
+            to="#main"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineHome size={20} />
             <span className="pl-4">Home</span>
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleNav}
-            href="#projects"
+            to="#projects"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
             <span className="pl-4">Projects</span>
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleNav}
-            href="#main"
+            to="#main"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <BsPerson size={20} />
             <span className="pl-4">Resume</span>
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleNav}
-            href="#contact"
+            to="#contact"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineMail size={20} />
             <span className="pl-4">Contact</span>
-          </a>
+          </Link>
         </div>
       ) : (
         ''

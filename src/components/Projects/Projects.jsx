@@ -19,8 +19,8 @@ const apps = [
   },
   {
     img: imageFinderImg,
-    title: 'ImageFinder App with React CRA',
-    library: 'React',
+    title: 'ImageFinder App',
+    library: 'React CRA',
     link: 'https://aivazov.github.io/react-cra-3-image-gallery/',
   },
 ];
@@ -45,7 +45,8 @@ export default function Projects() {
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         {apps.map((app) => (
-          <ProjectItem key={app.link}
+          <ProjectItem
+            key={app.link}
             img={app.img}
             title={app.title}
             stack={app.library}

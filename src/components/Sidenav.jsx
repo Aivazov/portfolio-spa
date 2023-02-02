@@ -21,11 +21,13 @@ export default function Sidenav() {
     <div>
       {nav ? (
         <AiOutlineClose
+          size={25}
           onClick={handleNav}
           className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
         />
       ) : (
         <AiOutlineMenu
+          size={25}
           onClick={handleNav}
           className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
         />

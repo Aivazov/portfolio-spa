@@ -75,7 +75,7 @@ export default function Sidenav() {
         />
         // ''
       )}
-      <div className="md:block hidden fixed top-[25%] z-10">
+      <div className="md:block hidden fixed top-[35%] z-10">
         <div className="flex flex-col">
           <a
             href="#main"

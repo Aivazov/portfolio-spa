@@ -59,7 +59,7 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="text-gray-100 mt-4 p-4 w-full bg-[#1a243c] rounded-lg"
+          className="text-gray-100 mt-4 p-4 w-full bg-[#1a243c] rounded-lg hover:bg-[#1a243c]/80 ease-in duration-200"
         >
           Send Message
         </button>

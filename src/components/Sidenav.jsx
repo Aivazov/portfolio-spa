@@ -12,7 +12,7 @@ export default function Sidenav() {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-    console.log('state changes:', nav);
+    // console.log('state changes:', nav);
   };
 
   return (
@@ -22,7 +22,7 @@ export default function Sidenav() {
         className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
       />
       {nav ? (
-        <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">
+        <div className="fixed w-full h-screen bg-white/70 flex flex-col justify-center items-center z-20 ease-linear duration-150">
           <a
             onClick={handleNav}
             href="#main"

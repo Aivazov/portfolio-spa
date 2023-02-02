@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import {
   FaInstagram,
@@ -19,7 +20,9 @@ export default function Main() {
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-200 md:text-center lg:text-left">
             Howdy, dear Guest!{' '}
-            <span className="block mt-4">I'm Tim Aivazov</span>
+            <span className="block mt-4 md:text-center lg:text-left">
+              I'm Tim Aivazov
+            </span>
           </h1>
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-100">
             <TypeAnimation
@@ -37,23 +40,58 @@ export default function Main() {
               style={{ fontSize: '1em' }}
             />
           </h2>
-          <div className="flex justify-between mt-6 p-2 max-w-[200px] w-full  bg-gray-200/50 rounded-lg">
-            <FaLinkedinIn
-              size={20}
-              className="cursor-pointer hover:text-gray-300 ease-in duration-200"
-            />
-            <FaInstagram
-              size={20}
-              className="cursor-pointer hover:text-gray-300 ease-in duration-200"
-            />
-            <FaTelegramPlane
-              size={20}
-              className="cursor-pointer hover:text-gray-300 ease-in duration-200r"
-            />
-            <FaGithub
-              size={20}
-              className="cursor-pointer hover:text-gray-300 ease-in duration-200"
-            />
+          <div>
+            <ul className="flex justify-between mt-6 max-w-[200px] w-full  bg-gray-200/50 rounded-lg">
+              <li className="p-2">
+                <Link
+                  to="https://linkedin.com/in/timur-aivazov"
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <FaLinkedinIn
+                    size={20}
+                    className=" hover:text-gray-100 ease-in duration-200"
+                  />
+                </Link>
+              </li>
+
+              <li className="p-2">
+                <Link
+                  to="https://www.instagram.com/aivazov_t/"
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <FaInstagram
+                    size={20}
+                    className=" hover:text-gray-100 ease-in duration-200"
+                  />
+                </Link>
+              </li>
+              <li className="p-2">
+                <Link
+                  to="https://t.me/Timur_Av"
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <FaTelegramPlane
+                    size={20}
+                    className=" hover:text-gray-100 ease-in duration-200r"
+                  />
+                </Link>
+              </li>
+              <li className="p-2">
+                <Link
+                  to="https://github.com/aivazov"
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <FaGithub
+                    size={20}
+                    className=" hover:text-gray-100 ease-in duration-200"
+                  />
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

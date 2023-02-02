@@ -20,8 +20,10 @@ export default function Main() {
         {/* <div className="flex flex-row my-auto"> */}
         {/* <div className="w-full h-screen m-auto flex flex-row justify-between items-center"> */}
         {/* <div className="max-w-[800px] m-auto h-full w-full flex justify-between lg:items-start items-center"> */}
-        <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
-          <div className="flex flex-col justify-center">
+        <div className="flex justify-between items-center max-w-[750px] m-auto h-full w-full">
+          <div className="max-w-[750px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
+            {/* <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center"> */}
+            {/* <div className="flex flex-col justify-center"> */}
             <h1 className="sm:text-5xl text-4xl font-bold text-gray-200 sm:text-center md:text-center lg:text-left">
               Howdy, dear Guest!
               <span className="block mt-4 min-[320px]:text-center lg:text-left">
@@ -98,13 +100,15 @@ export default function Main() {
               </ul>
             </div>
           </div>
-          {/* <div className="w-60 h-60 md:hidden lg:inline rounded-full">
-              <img
-                src="../assets/person.jpg"
-                alt="/"
-                className="border-2 rounded-full w-full h-full z-100 object-cover"
-              />
-            </div> */}
+          <div className="md:hidden sm:hidden lg:inline-block rounded-full">
+            <img
+              src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
+              // src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+              // src="../assets/person.jpg"
+              alt="Tim's Photo"
+              className="w-[250px] border-2 rounded-full z-100 object-fit bg-white"
+            />
+          </div>
           {/* </div> */}
         </div>
       </div>

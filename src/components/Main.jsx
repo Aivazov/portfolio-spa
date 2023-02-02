@@ -18,7 +18,8 @@ export default function Main() {
       <div className="w-full h-screen absolute top-0 left-0 bg-black/40">
         <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
           <h1 className="sm:text-5xl text-4xl font-bold text-gray-200 md:text-center lg:text-left">
-            Howdy, dear Guest! <span className='block mt-4'>I'm Tim Aivazov</span>
+            Howdy, dear Guest!{' '}
+            <span className="block mt-4">I'm Tim Aivazov</span>
           </h1>
           <h2 className="flex sm:text-3xl text-2xl pt-4 text-gray-100">
             <TypeAnimation
@@ -36,7 +37,7 @@ export default function Main() {
               style={{ fontSize: '1em' }}
             />
           </h2>
-          <div className="flex justify-between pt-6 max-w-[200px] w-full">
+          <div className="flex justify-between mt-6 p-2 max-w-[200px] w-full  bg-gray-200/50 rounded-lg">
             <FaLinkedinIn
               size={20}
               className="cursor-pointer hover:text-gray-300 ease-in duration-200"

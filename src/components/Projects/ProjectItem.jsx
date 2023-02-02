@@ -8,9 +8,11 @@ export default function ProjectItem({ img, title, stack, projectLink }) {
         <h3 className="text-2xl font-bold text-white tracking-wider text-center">
           {title}
         </h3>
-        <p>{stack}</p>
+        <p className="pb-4 pt-2 text-white text-center">{stack}</p>
         <a href={projectLink} target="_blank">
-          <p>More Info</p>
+          <p className="text-center p-3 rounded-lg bg-white text-gray-700 font-bold cursor-pointer text-lg hover:bg-gray-200">
+            More Info
+          </p>
         </a>
       </div>
     </div>

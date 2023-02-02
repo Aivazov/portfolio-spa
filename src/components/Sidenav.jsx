@@ -23,42 +23,46 @@ export default function Sidenav() {
         className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
       />
       {nav ? (
-        <div className="fixed w-full h-screen bg-white/70 flex flex-col justify-center items-center z-20 opacity-100 transition-opacity ease-linear duration-150">
-          <Link
+        <div className="fixed w-full h-screen bg-white/70 flex flex-col justify-center items-center z-20 opacity-100 transition-opacity ease-linear duration-300">
+          <a
             onClick={handleNav}
-            to="#main"
+            href="#main"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineHome size={20} />
             <span className="pl-4">Home</span>
-          </Link>
-          <Link
+          </a>
+          <a
             onClick={handleNav}
-            to="#projects"
+            href="#projects"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
             <span className="pl-4">Projects</span>
-          </Link>
-          <Link
+          </a>
+          <a
             onClick={handleNav}
-            to="#main"
+            href="#main"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <BsPerson size={20} />
             <span className="pl-4">Resume</span>
-          </Link>
-          <Link
+          </a>
+          <a
             onClick={handleNav}
-            to="#contact"
+            href="#contact"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineMail size={20} />
             <span className="pl-4">Contact</span>
-          </Link>
+          </a>
         </div>
       ) : (
-        ''
+        <div
+          // onClick={handleNav}
+          className="opacity-0 transition-opacity ease-linear duration-300"
+        />
+        // ''
       )}
       <div className="md:block hidden fixed top-[25%] z-10">
         <div className="flex flex-col">

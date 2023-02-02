@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Main from './components/Main';
+import Projects from './components/Projects/Projects';
 import Sidenav from './components/Sidenav';
 // import './App.css';
 
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <Sidenav />
       <Main />
+      <Projects />
     </div>
   );
 }

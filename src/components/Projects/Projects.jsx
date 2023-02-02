@@ -5,9 +5,24 @@ import weatherImg from '../../assets/weather-app.jpg';
 import imageFinderImg from '../../assets/image-finder-react.jpg';
 
 const apps = [
-  { img: dashboardImg, title: 'Dashboard App with Next.js' },
-  { img: weatherImg, title: 'Weather App with Next.js' },
-  { img: imageFinderImg, title: 'ImageFinder App with React CRA' },
+  {
+    img: dashboardImg,
+    title: 'Dashboard App',
+    library: 'Next.js',
+    link: 'https://nextjs-dashboard-test-task-git-main-aivazov.vercel.app/',
+  },
+  {
+    img: weatherImg,
+    title: 'Weather App',
+    library: 'Next.js',
+    link: 'https://weather-responsive-app-nextjs.vercel.app/',
+  },
+  {
+    img: imageFinderImg,
+    title: 'ImageFinder App with React CRA',
+    library: 'React',
+    link: 'https://aivazov.github.io/react-cra-3-image-gallery/',
+  },
 ];
 
 export default function Projects() {
@@ -30,7 +45,12 @@ export default function Projects() {
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         {apps.map((app) => (
-          <ProjectItem img={app.img} title={app.title} />
+          <ProjectItem
+            img={app.img}
+            title={app.title}
+            stack={app.library}
+            projectLink={app.link}
+          />
         ))}
       </div>
     </div>

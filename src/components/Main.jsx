@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import {
@@ -10,6 +10,10 @@ import {
 import { BsTelegram } from 'react-icons/bs';
 
 export default function Main() {
+  const [loadingPhoto, setLoadingPhoto] = useState(false);
+  setTimeout(() => {
+    setLoadingPhoto(true);
+  }, 1500);
   return (
     <div className="" id="main">
       <img
@@ -24,9 +28,9 @@ export default function Main() {
           <div className="max-w-[750px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center">
             {/* <div className="max-w-[700px] m-auto h-full w-full flex flex-col justify-center lg:items-start items-center"> */}
             {/* <div className="flex flex-col justify-center"> */}
-            <h1 className="sm:text-5xl text-4xl font-bold text-gray-200 sm:text-center md:text-center lg:text-left">
-              Howdy, dear Guest!
-              <span className="block mt-4 min-[320px]:text-center lg:text-left">
+            <h1 className="sm:text-5xl text-4xl font-bold text-gray-300 sm:text-center md:text-center lg:text-left">
+              Welcome, dear Guest!
+              <span className="block mt-4 min-[320px]:text-center lg:text-left text-gray-100">
                 I'm Tim Aivazov
               </span>
             </h1>
@@ -35,9 +39,11 @@ export default function Main() {
                 sequence={[
                   'Front-End Developer', // Types 'One'
                   2000, // Waits 1s
-                  'React / Next.js / Vite.js', // Deletes 'One' and types 'Two'
+                  'JavaScript | TypeScript', // Deletes 'One' and types 'Two'
                   3000, // Waits 2s
-                  'Bootstrap / Tailwind CSS / Material UI', // Types 'Three' without deleting 'Two'
+                  'React | Next.js | Vite.js', // Deletes 'One' and types 'Two'
+                  3000, // Waits 2s
+                  'Bootstrap | Tailwind | Material UI', // Types 'Three' without deleting 'Two'
                   3000,
                 ]}
                 wrapper="div"
@@ -100,15 +106,18 @@ export default function Main() {
               </ul>
             </div>
           </div>
-          <div className="md:hidden sm:hidden lg:inline-block rounded-full">
-            <img
-              src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
-              // src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-              // src="../assets/person.jpg"
-              alt="Tim's Photo"
-              className="w-[250px] border-2 rounded-full z-100 object-fit bg-white"
-            />
-          </div>
+          {loadingPhoto && (
+            <div className="md:hidden sm:hidden lg:inline-block rounded-full opacity-100 transition-opacity ease-linear duration-300">
+              <img
+                src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
+                // src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                // src="../assets/person.jpg"
+                alt="Tim's Photo"
+                className="w-[300px] border-2 rounded-full z-100 object-cover bg-white"
+              />
+            </div>
+          )}
+
           {/* </div> */}
         </div>
       </div>

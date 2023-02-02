@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import {
   AiOutlineMenu,
+  AiOutlineClose,
   AiOutlineHome,
   AiOutlineProject,
   AiOutlineMail,
@@ -18,10 +19,18 @@ export default function Sidenav() {
 
   return (
     <div>
-      <AiOutlineMenu
-        onClick={handleNav}
-        className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
-      />
+      {nav ? (
+        <AiOutlineClose
+          onClick={handleNav}
+          className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
+        />
+      ) : (
+        <AiOutlineMenu
+          onClick={handleNav}
+          className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
+        />
+      )}
+
       {nav ? (
         <div className="fixed w-full h-screen bg-white/70 flex flex-col justify-center items-center z-20 opacity-100 transition-opacity ease-linear duration-300">
           <a

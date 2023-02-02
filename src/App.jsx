@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Contact from './components/Contact';
 import Main from './components/Main';
 import Projects from './components/Projects/Projects';
 import Sidenav from './components/Sidenav';
@@ -12,6 +13,7 @@ function App() {
       <Sidenav />
       <Main />
       <Projects />
+      <Contact />
     </div>
   );
 }

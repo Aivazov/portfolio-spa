@@ -19,7 +19,7 @@ export default function Sidenav() {
     <div>
       <AiOutlineMenu
         onClick={handleNav}
-        className="z-[99] md:hidden absolute top-4 right-4 cursor-pointer"
+        className="z-[99] md:hidden fixed top-4 right-4 cursor-pointer"
       />
       {nav ? (
         <div className="fixed w-full h-screen bg-white/90 flex flex-col justify-center items-center z-20">

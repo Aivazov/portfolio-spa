@@ -71,7 +71,7 @@ export default function Sidenav() {
       ) : (
         <div
           // onClick={handleNav}
-          className="opacity-0 transition-opacity ease-linear duration-300"
+          className="opacity-0"
         />
         // ''
       )}

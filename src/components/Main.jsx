@@ -10,10 +10,10 @@ import {
 import { BsTelegram } from 'react-icons/bs';
 
 export default function Main() {
-  const [loadingPhoto, setLoadingPhoto] = useState(false);
-  setTimeout(() => {
-    setLoadingPhoto(true);
-  }, 1500);
+  const [loadingPhoto, setLoadingPhoto] = useState(true);
+  // setTimeout(() => {
+  //   setLoadingPhoto(true);
+  // }, 1500);
   return (
     <div className="" id="main">
       <img

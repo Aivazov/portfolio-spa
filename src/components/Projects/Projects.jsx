@@ -44,13 +44,13 @@ export default function Projects() {
         ullam aperiam. Repudiandae culpa labore nemo qui.
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
-        {apps.map((app) => (
+        {apps.map(({ link, img, title, library }) => (
           <ProjectItem
-            key={app.link}
-            img={app.img}
-            title={app.title}
-            stack={app.library}
-            projectLink={app.link}
+            key={link}
+            img={img}
+            title={title}
+            stack={library}
+            projectLink={link}
           />
         ))}
       </div>

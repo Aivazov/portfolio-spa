@@ -5,17 +5,7 @@ import dashboardImg from '../../assets/dashboard.jpg';
 import weatherImg from '../../assets/weather-app.jpg';
 import imageFinderImg from '../../assets/image-finder-react.jpg';
 
-const animation = {
-  hidden: {
-    x: 100,
-    opacity: 0,
-  },
-  visible: (custom) => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2 },
-  }),
-};
+
 
 const apps = [
   {
@@ -39,10 +29,6 @@ const apps = [
 ];
 
 export default function Projects() {
-  const [loadingPhoto, setLoadingPhoto] = useState(false);
-  setTimeout(() => {
-    setLoadingPhoto(true);
-  }, 1000);
   return (
     <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
       <h1 className="text-center font-bold text-4xl text-[#1a243c]">
@@ -60,13 +46,9 @@ export default function Projects() {
         explicabo itaque corrupti dignissimos id eos iure fugiat debitis placeat
         ullam aperiam. Repudiandae culpa labore nemo qui.
       </p>
-      {loadingPhoto && (
-        <motion.div
+      
+        <div
           className="grid sm:grid-cols-2 gap-12"
-          variants={animation}
-          custom={2}
-          initial="hidden"
-          whileInView="visible"
         >
           {apps.map(({ link, img, title, library }) => (
             <ProjectItem
@@ -77,8 +59,7 @@ export default function Projects() {
               projectLink={link}
             />
           ))}
-        </motion.div>
-      )}
+        </div>
     </div>
   );
 }

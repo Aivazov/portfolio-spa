@@ -107,7 +107,7 @@ export default function Main() {
             </div>
           </div>
           {loadingPhoto && (
-            <div className="md:hidden sm:hidden lg:inline-block rounded-full opacity-100 transition-opacity ease-linear duration-300">
+            <div className="md:hidden sm:hidden min-[320px]:hidden lg:inline-block rounded-full opacity-100 transition-opacity ease-linear duration-300">
               <img
                 src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
                 // src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"

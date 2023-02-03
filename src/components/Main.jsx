@@ -26,7 +26,7 @@ export default function Main() {
   const [loadingPhoto, setLoadingPhoto] = useState(false);
   setTimeout(() => {
     setLoadingPhoto(true);
-  }, 1500);
+  }, 1000);
   return (
     <div className="" id="main">
       <img

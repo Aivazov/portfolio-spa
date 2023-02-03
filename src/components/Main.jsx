@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import {
@@ -7,13 +8,25 @@ import {
   FaLinkedinIn,
   FaTelegramPlane,
 } from 'react-icons/fa';
-import { BsTelegram } from 'react-icons/bs';
+// import { BsTelegram } from 'react-icons/bs';
+
+const animation = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
 
 export default function Main() {
-  const [loadingPhoto, setLoadingPhoto] = useState(true);
-  // setTimeout(() => {
-  //   setLoadingPhoto(true);
-  // }, 1500);
+  const [loadingPhoto, setLoadingPhoto] = useState(false);
+  setTimeout(() => {
+    setLoadingPhoto(true);
+  }, 1500);
   return (
     <div className="" id="main">
       <img
@@ -107,7 +120,13 @@ export default function Main() {
             </div>
           </div>
           {loadingPhoto && (
-            <div className="md:hidden sm:hidden min-[320px]:hidden lg:inline-block rounded-full opacity-100 transition-opacity ease-linear duration-300">
+            <motion.div
+              variants={animation}
+              custom={2}
+              initial="hidden"
+              whileInView="visible"
+              className="md:hidden sm:hidden min-[320px]:hidden lg:inline-block rounded-full"
+            >
               <img
                 src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
                 // src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
@@ -115,7 +134,7 @@ export default function Main() {
                 alt="Tim's Photo"
                 className="w-[300px] border-2 rounded-full z-100 object-cover bg-white"
               />
-            </div>
+            </motion.div>
           )}
 
           {/* </div> */}

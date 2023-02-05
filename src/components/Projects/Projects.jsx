@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import ProjectItem from './ProjectItem';
 import dashboardImg from '../../assets/dashboard.jpg';
 import weatherImg from '../../assets/weather-app.jpg';
 import imageFinderImg from '../../assets/image-finder-react.jpg';
-
-
 
 const apps = [
   {
@@ -46,20 +43,18 @@ export default function Projects() {
         explicabo itaque corrupti dignissimos id eos iure fugiat debitis placeat
         ullam aperiam. Repudiandae culpa labore nemo qui.
       </p>
-      
-        <div
-          className="grid sm:grid-cols-2 gap-12"
-        >
-          {apps.map(({ link, img, title, library }) => (
-            <ProjectItem
-              key={link}
-              img={img}
-              title={title}
-              stack={library}
-              projectLink={link}
-            />
-          ))}
-        </div>
+
+      <div className="grid sm:grid-cols-2 gap-12">
+        {apps.map(({ link, img, title, library }) => (
+          <ProjectItem
+            key={link}
+            img={img}
+            title={title}
+            stack={library}
+            projectLink={link}
+          />
+        ))}
+      </div>
     </div>
   );
 }

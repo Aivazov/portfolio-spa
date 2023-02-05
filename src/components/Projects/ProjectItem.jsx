@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const animation = {
   hidden: {
-    x: 100,
+    x: -100,
     opacity: 0,
   },
   visible: (custom) => ({
@@ -29,7 +29,6 @@ export default function ProjectItem({ img, title, stack, projectLink }) {
           initial="hidden"
           whileInView="visible"
         >
-          {/* <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 group rounded-xl hover:bg-gradient-to-r from-gray-200 to-[#1a243c] ease-in duration-300"> */}
           <img
             src={img}
             alt=""

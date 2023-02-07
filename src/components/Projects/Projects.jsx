@@ -8,7 +8,7 @@ const apps = [
   {
     img: dashboardImg,
     title: 'Dashboard App',
-    library: 'Next.js',
+    library: 'Next.js, Chart.js',
     link: 'https://nextjs-dashboard-test-task-git-main-aivazov.vercel.app/',
   },
   {
@@ -21,7 +21,7 @@ const apps = [
     img: imageFinderImg,
     title: 'ImageFinder App',
     library: 'React CRA',
-    link: 'https://aivazov.github.io/react-cra-3-image-gallery/',
+    link: 'https://aivazov.github.io/react-hooks-images-gallery/',
   },
 ];
 

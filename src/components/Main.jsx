@@ -130,7 +130,7 @@ export default function Main() {
               <img
                 src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
                 alt="Tim's Photo"
-                className="w-[300px] border-2 rounded-full z-100 object-cover bg-white"
+                className="max-w-[200px] border-2 rounded-full z-100 object-cover bg-white"
               />
             </motion.div>
           )}

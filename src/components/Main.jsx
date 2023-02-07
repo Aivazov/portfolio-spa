@@ -128,6 +128,7 @@ export default function Main() {
               className="md:hidden sm:hidden min-[320px]:hidden lg:inline-block rounded-full"
             >
               <img
+                // src="../assets/1669725289507.jpg"
                 src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
                 alt="Tim's Photo"
                 className="max-w-[200px] border-2 rounded-full z-100 object-cover bg-white"

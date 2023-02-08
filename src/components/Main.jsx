@@ -27,10 +27,10 @@ export default function Main() {
     setLoadingPhoto(true);
   }, 1000);
 
-  useEffect(() => {
-    loadingPhotoTimeout;
-    clearTimeout(loadingPhotoTimeout);
-  }, []);
+  // useEffect(() => {
+  //   loadingPhotoTimeout;
+  //   clearTimeout(loadingPhotoTimeout);
+  // }, []);
 
   return (
     <div className="" id="main">

@@ -23,8 +23,8 @@ export default function ProjectItem({ img, title, stack, projectLink }) {
     <>
       {loadingPhoto && (
         <motion.div
-          className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 group rounded-xl hover:bg-[#1a243c]/40 ease-in duration-300"
-          // className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 group rounded-xl hover:bg-[#1a243c]/40 ease-in duration-300"
+          className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 group rounded-xl hover:bg-[#1a243c]/40 ease-in duration-200"
+          // className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 group rounded-xl hover:bg-[#1a243c]/40 ease-in duration-200"
           variants={animation}
           custom={2}
           initial="hidden"
@@ -33,7 +33,7 @@ export default function ProjectItem({ img, title, stack, projectLink }) {
           <img
             src={img}
             alt=""
-            className="rounded-xl group-hover:opacity-10 ease-in duration-300"
+            className="rounded-xl group-hover:opacity-10 ease-in duration-200"
           />
           <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <h3 className="text-2xl font-bold text-white tracking-wider text-center">

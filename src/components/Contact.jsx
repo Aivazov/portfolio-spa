@@ -27,7 +27,6 @@ export default function Contact() {
               className="border-2 rounded-lg p-3 flex border-gray-300"
               type="tel"
               name="number"
-              required
             />
           </div>
         </div>

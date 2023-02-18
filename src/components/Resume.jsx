@@ -1,5 +1,6 @@
 import React from 'react';
-import PersonImg from '../../public/static/person.png'
+import PersonImg from '../../public/static/person.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { motion } from 'framer-motion';
 
 export default function Resume() {
@@ -20,11 +21,12 @@ export default function Resume() {
           viewport={{ once: true }}
           src={PersonImg}
           // src="/static/person.png"
-          alt="tim-photo"
-          className="mt-4 rounded-lg max-w-[400px] max-h-[500px] object-cover"
+          alt="Tim's-photo"
+          loading="lazy"
+          className="mt-4 rounded-lg max-w-[400px] max-h-[500px] object-cover max-sm:w-[300px]"
         />
 
-        <div className="max-xl:ml-4 md:max-w-md text-lg">
+        <div className="max-xl:ml-4 md:max-w-md text-lg max-sm:text-sm max-md:w-[300px]">
           <p className="text-left py-4">
             I'm an aspiring Front-End developer with 7 months of nonprofit
             experience. I've submitted some of my work above to give an overview

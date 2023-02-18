@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import TitleImg from '../../public/static/1669725289507.png';
+import TitleImg from '../../public/static/1669725289507.jpg';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';

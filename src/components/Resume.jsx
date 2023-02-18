@@ -17,7 +17,7 @@ export default function Resume() {
             duration: 1.5,
           }}
           viewport={{ once: true }}
-          src="/public/static/person.png"
+          src="/static/person.png"
           alt="tim-photo"
           className="mt-4 rounded-lg max-w-[400px] max-h-[500px] object-cover"
         />

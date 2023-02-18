@@ -129,7 +129,8 @@ export default function Main() {
               viewport={{ once: true }}
             >
               <img
-                src="../../public/static/1669725289507.jpg"
+                src="/static/1669725289507.jpg"
+                // src="../../public/static/1669725289507.jpg"
                 alt="Tim's Photo"
                 className="max-w-[200px] border-2 rounded-full z-100 object-cover bg-white"
               />

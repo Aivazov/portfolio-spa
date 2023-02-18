@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Contact from './components/Contact';
 import Main from './components/Main';
 import Projects from './components/Projects/Projects';
+import Resume from './components/Resume';
 import Sidenav from './components/Sidenav';
 // import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
       <Sidenav />
       <Main />
       <Projects />
+      <Resume />
       <Contact />
     </div>
   );

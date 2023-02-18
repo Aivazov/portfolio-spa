@@ -126,10 +126,10 @@ export default function Main() {
               initial="hidden"
               whileInView="visible"
               className="md:hidden sm:hidden min-[320px]:hidden lg:inline-block rounded-full"
+              viewport={{ once: true }}
             >
               <img
-                // src="../assets/1669725289507.jpg"
-                src="https://media.licdn.com/dms/image/D4D03AQH7bsCe0UQo8w/profile-displayphoto-shrink_800_800/0/1669725289507?e=2147483647&v=beta&t=_bb9Oq1uGr-DU-HHez1hCqIxFLdfeu6LPV-g-rtC39o"
+                src="../../public/static/1669725289507.jpg"
                 alt="Tim's Photo"
                 className="max-w-[200px] border-2 rounded-full z-100 object-cover bg-white"
               />

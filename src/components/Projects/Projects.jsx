@@ -27,24 +27,34 @@ const apps = [
 
 export default function Projects() {
   return (
-    <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+    <div
+      id="projects"
+      className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 text-lg"
+    >
       <h1 className="text-center font-bold text-4xl text-[#1a243c]">
         Projects
       </h1>
-      <p className="text-center py-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-        recusandae cupiditate repellendus ipsam quo, id quasi odio inventore
-        incidunt facilis autem, natus laborum perspiciatis quibusdam perferendis
-        mollitia iusto assumenda beatae! Omnis sed aperiam praesentium dolore,
-        accusantium veritatis. Hic nam obcaecati cumque ipsa vel officiis eaque
-        ut, pariatur nostrum eos accusamus voluptatum dolorum, veritatis
-        inventore similique repellendus quisquam in, nihil praesentium? Modi
-        porro at rem ea eveniet maiores labore iusto numquam odit quod fugit,
-        explicabo itaque corrupti dignissimos id eos iure fugiat debitis placeat
-        ullam aperiam. Repudiandae culpa labore nemo qui.
+      <p className="text-left py-6">
+        Here are my pet projects where I tested some new technology stacks. In
+        the Dashboard project, I used React Framework Next.js for the first
+        time. Also in this project, I applied Chart.js and worked with a chart
+        based on a plain local data array.
       </p>
 
-      <div className="grid sm:grid-cols-2 gap-12">
+      <p className="text-left py-4">
+        The second project is the Weather App. A simple app that shows the user
+        the current data of the city that the user enters in the search bar. The
+        data is taken from WeatherAPI. Demonstrates the ability to retrieve data
+        from the backend and render it on the client side. Built on Next.js.
+      </p>
+
+      <p className="text-left py-4">
+        The third application searches for images based on the tags entered in
+        the search bar. The data is taken from PixabayAPI. Pagination is
+        present. Built on classic React CRA.
+      </p>
+
+      <div className="grid sm:grid-cols-2 gap-12 mt-4">
         {apps.map(({ link, img, title, library }) => (
           <ProjectItem
             key={link}

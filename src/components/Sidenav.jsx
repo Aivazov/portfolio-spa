@@ -53,7 +53,7 @@ export default function Sidenav() {
           </a>
           <a
             onClick={handleNav}
-            href="#main"
+            href="#resume"
             className="w-[75%] flex justify-center items-center bg-gray-200 shadow-md rounded-full shadow-gray-400 p-4 m-2 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <BsPerson size={20} />
@@ -90,7 +90,7 @@ export default function Sidenav() {
             <AiOutlineProject size={20} />
           </a>
           <a
-            href="#main"
+            href="#resume"
             className="m-3 p-4 rounded-full bg-gray-100 shadow-gray-400 shadow-md hover:scale-110 hover:bg-gray-200 ease-in duration-200"
           >
             <BsPerson size={20} />

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import TitleImg from '../../public/static/1669725289507.jpg'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
@@ -129,7 +130,7 @@ export default function Main() {
               viewport={{ once: true }}
             >
               <img
-                src="/static/1669725289507.jpg"
+                src={TitleImg}
                 // src="../../public/static/1669725289507.jpg"
                 alt="Tim's Photo"
                 className="max-w-[200px] border-2 rounded-full z-100 object-cover bg-white"

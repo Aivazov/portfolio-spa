@@ -1,4 +1,5 @@
 import React from 'react';
+import PersonImg from '../../public/static/person.png'
 import { motion } from 'framer-motion';
 
 export default function Resume() {
@@ -17,7 +18,8 @@ export default function Resume() {
             duration: 1.5,
           }}
           viewport={{ once: true }}
-          src="/static/person.png"
+          src={PersonImg}
+          // src="/static/person.png"
           alt="tim-photo"
           className="mt-4 rounded-lg max-w-[400px] max-h-[500px] object-cover"
         />
